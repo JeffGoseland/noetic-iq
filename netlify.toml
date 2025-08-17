@@ -1,0 +1,13 @@
+[build]
+  # static site example
+  publish = "."
+
+  # if using a build step, uncomment:
+  # command = "npm run build"
+  # publish = "dist"
+
+# For SPA routing (optional)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
