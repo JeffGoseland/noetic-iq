@@ -15,29 +15,49 @@
       background-color: #ffffff;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #333;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in-out forwards;
     }
     img {
       max-width: 200px;
       margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideUp 1.5s ease-out forwards;
+      animation-delay: 0.5s;
     }
     h1 {
       font-size: 2rem;
       font-weight: 500;
       letter-spacing: 1px;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: slideUp 1.5s ease-out forwards;
+      animation-delay: 1s;
     }
     p {
       font-size: 1.1rem;
       color: #666;
       margin-top: 0.5rem;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: slideUp 1.5s ease-out forwards;
+      animation-delay: 1.5s;
     }
     .accent {
       color: #2e6f95; /* steel blue accent */
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <img src="./img/noetic-iq.png" alt="NoeticIQ Logo" />
   <h1><span class="accent">NoeticIQ</span> is Coming Soon</h1>
-  <p>Innovating at the intersection of data and congnition.   Coming soon.</p>
+  <p>Innovating at the intersection of data, cognition, and music.</p>
 </body>
 </html>
