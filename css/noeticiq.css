@@ -100,15 +100,16 @@ p {
 }
 
 .what-we-do ul {
-  list-style: none;
+  list-style: none !important;
   padding: 0;
   margin: 2rem auto;
   font-size: 1.1rem;
   line-height: 1.8;
-  max-width: 800px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
 .what-we-do li {
@@ -121,6 +122,9 @@ p {
   border-left: 4px solid #D4841A;
   font-weight: 500;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 0 1 280px;
+  min-width: 250px;
+  list-style: none !important;
 }
 
 .what-we-do li:hover {
