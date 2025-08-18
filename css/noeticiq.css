@@ -1,15 +1,16 @@
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
+  padding-top: 2rem;
 }
 
 img {
@@ -69,8 +70,8 @@ p {
 
 .what-we-do {
   text-align: center;
-  margin-top: 4rem;
-  padding: 3rem 2rem;
+  margin-top: 1rem;
+  padding: 2rem 1rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
