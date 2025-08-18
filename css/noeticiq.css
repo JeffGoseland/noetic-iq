@@ -10,11 +10,14 @@ body {
   color: #333;
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
-  padding-top: 2rem;
+  padding: 1rem 1rem 2rem 1rem;
+  box-sizing: border-box;
 }
 
 img {
   max-width: 625px;
+  width: 100%;
+  height: auto;
   margin-bottom: 0rem;
   opacity: 0;
   transform: translateY(20px);
@@ -84,11 +87,13 @@ p {
   margin-top: 1rem;
   padding: 0 1rem 2rem 1rem;
   max-width: 800px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
   animation-delay: 2s;
+  box-sizing: border-box;
 }
 
 .what-we-do h2 {
@@ -115,10 +120,12 @@ p {
   font-size: 1.1rem;
   line-height: 1.8;
   max-width: 1000px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 1.2rem;
+  box-sizing: border-box;
 }
 
 .service-category {
@@ -168,9 +175,11 @@ p {
   border-left: 4px solid #D4841A;
   font-weight: 500;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  flex: 0 1 280px;
+  flex: 1 1 280px;
   min-width: 250px;
+  max-width: 100%;
   list-style: none !important;
+  box-sizing: border-box;
 }
 
 .what-we-do li:hover {
@@ -193,4 +202,66 @@ p {
 
 @keyframes slideUp {
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+  }
+  
+  img {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .about-snippet {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+  .what-we-do {
+    margin-top: 0.5rem;
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+  
+  .what-we-do h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .what-we-do p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .what-we-do ul {
+    margin: 1rem auto;
+    gap: 0.8rem;
+  }
+  
+  .what-we-do li {
+    flex: 1 1 100%;
+    min-width: auto;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .linkedin-link {
+    margin-top: 1rem;
+  }
+  
+  .linkedin-link a {
+    font-size: 0.9rem;
+  }
 }
